@@ -191,6 +191,20 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
+  <h2 class="title is-3">Main Architecture</h2>
+        <!-- 移除面板的背景和边框 -->
+        <div class="columns is-vcentered interpolation-panel" style="background: none; border: none;">
+          <div class="column is-full has-text-centered">
+            <!-- 移除图片的边框和背景 -->
+            <img src="./static/images/mainarch.png" 
+                class="interpolation-image" 
+                alt="Main archimage" 
+                style="border: none; background: none;"/>
+          </div>
+        </div>
+        <p> The framework of Aff-Grasp. It first employs an open-vocabulary detector to locate all objects within the scene, which are then sent to GAT to determine if they possess the corresponding affordance required for the task. Afterwards, a 6 DoF grasp generation model, Contact-GraspNet, leverages the object's graspable affordance and the depth map to generate dense grasp proposals. Finally, the robot executes affordance-specific sequential motion primitives to apply the functional part to the target.
+        </p>
+        
         <h2 class="title is-3">Qualitative Results</h2>
 
         <!-- Results on AGD20K-Seen -->
